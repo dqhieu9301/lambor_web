@@ -1,0 +1,72 @@
+.slider {
+    background-image: url('../../../img/std_04_04_2022.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: cover cover;
+    padding-top: 48.5%;
+    color: #fff;
+    position: relative;
+    .page-title {
+        display: inline-block;
+        position: absolute;
+        font-size: 40px;
+        top: 180px;
+        left: 160px;
+        .save ,
+        .the ,
+        .date {
+            display: inline-block;
+            div {
+                opacity: 0;
+                display: inline-block;
+            }
+        }
+        .date,
+        .the {
+            margin-left: 13px;
+        }
+    }
+    .content-date {
+        position: absolute;
+        font-size: 100px;
+        line-height: 100px;
+        top: 250px;
+        left: -1000px;
+        transition: all 2s ease;
+    }
+    span {
+        position: absolute;
+        left: 160px;
+        top: 480px;
+        font-size: 16px;
+        border-bottom: 1px solid #fff;
+        padding: 10px 0px;
+        i {
+            margin-left: 50px;
+            display: inline-block;
+            transition: all 0.5s ease;
+        }
+    }
+    span:hover {
+        cursor: pointer;
+    }
+
+    .menu_span {
+        display: none;
+        position: absolute;
+        left: 160px;
+        top: 519px;
+        width: 209px;
+        border: 2px solid #fff;
+        ul {
+            list-style: none;
+            li {
+                padding: 20px 0px;
+                a {
+                    color: #fff;
+                    margin-left: 15px;
+                }
+            }
+        }
+    }
+}

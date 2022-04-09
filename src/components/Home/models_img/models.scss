@@ -1,0 +1,542 @@
+.models {
+    position: relative;
+    height: 100vh;
+    min-height: 680px;
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    .model-slider-container {
+        position: absolute;
+        height: 100%;
+        top: 0;
+        right: 0;
+        display: flex;
+        .skew1 {
+            position: relative;
+            width: 29.2vw;
+            height: 100%;
+            transition: width 0.5s ease-out;
+            .slider-image {
+                position: relative;
+                width: 100%;
+                height: 100%;
+                transform: skew(-20deg);
+                transform-origin: bottom left;
+                overflow: hidden;
+                .overlay {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    right: 0;
+                    bottom: 0;
+                    background-color: black;
+                    z-index: 2;
+                    opacity: 0.7;
+                }
+                .slider-image-fix {
+                    position: relative;
+                    width: 236%;
+                    height: 100%;
+                    transform: skew(20deg);
+                    transform-origin: bottom left;
+                    img {
+                        max-width: unset;
+                        width: auto;
+                        height: 100%;
+                        position: absolute;
+                        left: 21%;
+                        bottom: 0;
+                        transform: translateX(-50%);
+                    }
+                }
+            }
+            
+        }
+        .skew2 {
+            position: relative;
+            width: 26vw;
+            height: 100%;
+            transition: width 0.5s ease-out;
+            .slider-image {
+                position: relative;
+                width: 100%;
+                height: 100%;
+                transform: skew(-20deg);
+                transform-origin: bottom left;
+                background-color: black;
+                overflow: hidden;
+                .overlay {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    right: 0;
+                    bottom: 0;
+                    background-color: black;
+                    z-index: 2;
+                    opacity: 0.7;
+                }
+                .slider-image-fix {
+                    position: relative;
+                    width: 236%;
+                    height: 100%;
+                    transform: skew(20deg);
+                    transform-origin: bottom left;
+                    img {
+                        max-width: unset;
+                        width: auto;
+                        height: 100%;
+                        position: absolute;
+                        left: 21%;
+                        bottom: 0;
+                        transform: translateX(-50%);
+                    }
+                }
+            }
+        }
+        .skew3 {
+            position: relative;
+            width: 65vw;
+            height: 100%;
+            transition: width 0.5s ease-out;
+            .slider-image {
+                position: relative;
+                width: 100%;
+                height: 100%;
+                transform: skew(-20deg);
+                transform-origin: bottom left;
+                background-color: black;
+                overflow: hidden;
+                .slider-image-fix {
+                    position: relative;
+                    width: 236%;
+                    height: 100%;
+                    transform: skew(20deg);
+                    transform-origin: bottom left;
+                    img {
+                        max-width: unset;
+                        width: auto;
+                        height: 100%;
+                        position: absolute;
+                        left: 21%;
+                        bottom: 0;
+                        transform: translateX(-50%);
+                    }
+                }
+            }
+        }
+    }
+    .models-content {
+        position:absolute;
+        left: 100px;
+        top: 100px;
+        h2 {
+            position: relative;
+            margin-bottom: 40px;
+            color: #fff;
+            font-size: 30px;
+            letter-spacing: 2px;
+        }
+        .bton_left {
+            position: relative;
+            width: 60px;
+            height: 34px;
+            border-left: 2px solid #fff;
+            border-right: 2px solid #fff;
+            border-bottom: none;
+            border-top: none;
+            background-color: inherit;
+    
+            i {
+                position: absolute;
+                top: 5px;
+                left: 0;
+                right: 0;
+                font-size: 25px;
+                font-weight: 900;
+                z-index: 1;
+                color: #fff;
+            }
+        }
+        .bton_left:hover {
+            cursor: pointer;
+            background-color: #fff;
+        }
+        .bton_left:hover::before{
+            background-color: #fff;
+        }
+        .bton_left:hover::after{
+            background-color: #fff;
+        }
+        .bton_left:hover i{
+            color: #000;
+        }
+    
+        .bton_left::before ,
+        .bton_left::after{
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            border-left: 2px solid #fff;
+            border-right: 2px solid #fff;
+            border-bottom: none;
+            border-top: none;
+            top: 0;
+            left: -2px;
+        }
+        .bton_left::before {
+            transform: rotate(60deg);
+        }
+        .bton_left::after {
+            transform: rotate(-60deg);
+        }
+    
+        .bton_right {
+            position: relative;
+            width: 60px;
+            height: 34px;
+            border-left: 2px solid #fff;
+            border-right: 2px solid #fff;
+            border-bottom: none;
+            border-top: none;
+            background-color: inherit;
+            margin-left: 40px;
+            i {
+                position: absolute;
+                top: 5px;
+                left: 0;
+                right: 0;
+                font-size: 25px;
+                font-weight: 900;
+                z-index: 1;
+                color: #fff;
+            }
+        }
+        .bton_right:hover {
+            cursor: pointer;
+            background-color: #fff;
+        }
+        .bton_right:hover::before{
+            background-color: #fff;
+        }
+        .bton_right:hover::after{
+            background-color: #fff;
+        }
+        .bton_right:hover i{
+            color: #000;
+        }
+    
+        .bton_right::before ,
+        .bton_right::after{
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            border-left: 2px solid #fff;
+            border-right: 2px solid #fff;
+            border-bottom: none;
+            border-top: none;
+            top: 0;
+            left: -2px;
+        }
+        .bton_right::before {
+            transform: rotate(60deg);
+        }
+        .bton_right::after {
+            transform: rotate(-60deg);
+        }
+
+        .models-carname {
+            margin-top: 50px;
+            margin-bottom: 20px;
+            div {
+                display: inline-block;
+                font-size: 110px;
+                font-weight: 600;
+                color: #fff;
+            }
+        }
+        span {
+            color: #fff;
+            font-size: 30px;
+            font-weight: 500;
+        }
+        .bton-explore {
+            margin-top: 100px;
+            .bton-plus {
+                position: relative;
+                width: 60px;
+                height: 34px;
+                border-left: 2px solid #fff;
+                border-right: 2px solid #fff;
+                border-bottom: none;
+                border-top: none;
+                background-color: inherit;
+                margin-left: 40px;
+                i {
+                    position: absolute;
+                    top: 5px;
+                    left: 0;
+                    right: 0;
+                    font-size: 25px;
+                    font-weight: 900;
+                    z-index: 1;
+                    color: #fff;
+                }
+            }
+            .bton-plus:hover {
+                cursor: pointer;
+                background-color: #fff;
+            }
+            .bton-plus:hover::before{
+                background-color: #fff;
+            }
+            .bton-plus:hover::after{
+                background-color: #fff;
+            }
+            .bton-plus:hover i{
+                color: #000;
+            }
+        
+            .bton-plus::before ,
+            .bton-plus::after{
+                content: '';
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                border-left: 2px solid #fff;
+                border-right: 2px solid #fff;
+                border-bottom: none;
+                border-top: none;
+                top: 0;
+                left: -2px;
+            }
+            .bton-plus::before {
+                transform: rotate(60deg);
+            }
+            .bton-plus::after {
+                transform: rotate(-60deg);
+            }
+
+            p {
+                color: #fff;
+                font-size: 19px;
+                margin-left: 90px;
+            }
+        }
+
+    }
+}
+
+.configurator {
+    .configurator-container{
+        overflow: hidden;
+        position: relative;
+            .configurator-main {
+                width: 100%;
+                display: flex;
+                transition: all 0.25 linear;
+                .configurator-item {
+                    background-size: contain;
+                    background-repeat: no-repeat;
+                    flex: 1 0 100%;
+                    padding-top: 40%;
+                }
+    
+                .item1 {
+                    background-image: url('../../../img/Homepage\ CC\ AVANZAMENTO_ultimae_1920_706.jpg');
+                }
+    
+                .item2 {
+                    background-image: url('../../../img//Homepage\ CC\ HURACAN_EVO_1920_706.png');
+                }
+    
+                .item3 {
+                    background-image: url('../../../img/Homepage\ CC\ URUS_1920_706.png');
+                }
+        }
+
+        .configurator-content {
+            position: absolute;
+            top: 80px;
+            left: 100px;
+            .title {
+                div {
+                    display: inline-block;
+                    font-size: 29px;
+                    font-weight: 550;
+                    color: #202020;
+                    transition: all 0.25s ease;
+                    opacity: 0;
+                }
+            }
+            h2,
+            h1 {
+                margin-top: 20px;
+                font-size: 76px;
+                line-height: 60px;
+                transition: all 0.3s ease;
+            }
+            .bton_left {
+                position: relative;
+                width: 60px;
+                height: 34px;
+                border-left: 2px solid #000;
+                border-right: 2px solid #000;
+                border-bottom: none;
+                border-top: none;
+                margin-left: 50px;
+                margin-top: 50px;
+                background-color: inherit;
+
+                i {
+                    position: absolute;
+                    top: 5px;
+                    left: 0;
+                    right: 0;
+                    font-size: 25px;
+                    font-weight: 900;
+                    z-index: 1;
+                    color: #000;
+                }
+            }
+            .bton_left:hover {
+                cursor: pointer;
+                background-color: #000;
+            }
+            .bton_left:hover::before{
+                background-color: #000;
+            }
+            .bton_left:hover::after{
+                background-color: #000;
+            }
+            .bton_left:hover i{
+                color: #fff;
+            }
+        
+            .bton_left::before ,
+            .bton_left::after{
+                content: '';
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                border-left: 2px solid #000;
+                border-right: 2px solid #000;
+                border-bottom: none;
+                border-top: none;
+                top: 0;
+                left: -2px;
+            }
+            .bton_left::before {
+                transform: rotate(60deg);
+            }
+            .bton_left::after {
+                transform: rotate(-60deg);
+            }
+            .nav_bton {
+                margin-top: 80px;
+                button {
+                    background-color: inherit;
+                    font-size: 20px;
+                    padding: 0px 40px 20px 0px ;
+                    border-top: none;
+                    border-left: none;
+                    border-right: none;
+                    border-bottom: none;
+                    border-bottom: 3px solid gray ;
+                    opacity: 0.3;
+                    transition: all 1s linear;
+                }
+                button:hover {
+                    opacity: 1;
+                    border-bottom: 3px solid #000 ;
+                    cursor: pointer;
+                }
+            }
+        }  
+    }   
+}
+
+.dealer-locator {
+   .dealer-locator-container {
+        background-image: url('../../../img/533702.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        padding-top: 43%;
+        position: relative;
+        h2 {
+            color: #fff;
+            font-size: 30px;
+            position: absolute;
+            top: 150px;
+            left: 100px;
+        }
+        h1 {
+            color: #fff;
+            font-size: 76px;
+            position: absolute;
+            top: 230px;
+            left: 100px;
+            line-height: 69px;
+        }
+        .dealer-locator-bton {
+            position: absolute;
+            top: 450px;
+            .bton_right {
+                position: relative;
+                width: 60px;
+                height: 34px;
+                border-left: 2px solid #fff;
+                border-right: 2px solid #fff;
+                border-bottom: none;
+                border-top: none;
+                margin-left: 100px;
+                background-color: inherit;
+        
+                i {
+                    position: absolute;
+                    top: 5px;
+                    left: 0;
+                    right: 0;
+                    font-size: 25px;
+                    font-weight: 900;
+                    z-index: 1;
+                    color: #fff;
+                }
+            }
+            .bton_right:hover {
+                cursor: pointer;
+                background-color: #fff;
+            }
+            .bton_right:hover::before{
+                background-color: #fff;
+            }
+            .bton_right:hover::after{
+                background-color: #fff;
+            }
+            .bton_right:hover i{
+                color: #000;
+            }
+        
+            .bton_right::before ,
+            .bton_right::after{
+                content: '';
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                border-left: 2px solid #fff;
+                border-right: 2px solid #fff;
+                border-bottom: none;
+                border-top: none;
+                top: 0;
+                left: -2px;
+            }
+            .bton_right::before {
+                transform: rotate(60deg);
+            }
+            .bton_right::after {
+                transform: rotate(-60deg);
+            }
+        }
+   }
+}
