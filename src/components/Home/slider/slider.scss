@@ -1,5 +1,5 @@
 .slider {
-    background-image: url('../../../img/std_04_04_2022.jpg');
+    background-image: url('../../../img/hura_slide_01.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: cover cover;
@@ -12,17 +12,16 @@
         font-size: 40px;
         top: 180px;
         left: 160px;
-        .save ,
-        .the ,
-        .date {
+        .huracán ,
+        .tecnica {
             display: inline-block;
             div {
                 opacity: 0;
                 display: inline-block;
             }
         }
-        .date,
-        .the {
+        .huracán,
+        .tecnica {
             margin-left: 13px;
         }
     }
@@ -67,6 +66,27 @@
                     margin-left: 15px;
                 }
             }
+        }
+    }
+}
+
+
+@media (max-width:740px) {
+    .slider {
+        padding-top: 120%;
+        .page-title {
+            left: 0px;
+            .huracán , 
+            .tecnica {
+                font-size: 18px;
+            }
+        }
+        .content-date {
+            font-size: 40px;
+            line-height: 45px;
+        }
+        span {
+            display: none;
         }
     }
 }

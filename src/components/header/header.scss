@@ -1,9 +1,9 @@
 .header {
-    position: fixed;
-    width: 100%;
-    z-index: 1;
+    background-color: #202020;
     .header-container {
-        height: 94px;
+        position: fixed;
+        z-index: 99;
+        width: 100%;
         display: flex;
         background-color: #202020;
         img {
@@ -23,56 +23,191 @@
                         display: inline-block;
                         padding: 0px 15px;
                         a {
+                            position: relative;
                             padding: 10px 0px;
                             line-height: 94px;
                             text-decoration: none;
                             font-size: 16px;
                             color: #ffffff;
                         }
+                        a::before {
+                            position: absolute;
+                            content: '';
+                            width: 0;
+                            height: 0.5px;
+                            background-color: #fff;
+                            bottom: 0;
+                            transition: all 0.5s ease;
+                        }
 
-                        // a::after {
-                        //     display: inline-block;
-                        //     content: '';
-                        //     border-bottom: solid 20px #019fb6;  
-                        //     transform: scaleX(0);  
-                        //     transition: transform 250ms ease-in-out;
-                        // }
+                        a:hover::before {
+                            width: 100%;
+                        }
+                        .nav-motorsport,
+                        .nav-ownership ,
+                        .nav-custom_solutions,
+                        .nav-models {
+                            position:absolute;
+                            z-index: 99;
+                            width: 100%;
+                            left: 0;
+                            background-color: #202020;
+                            transition: all 0.5s ease;
+                            height: 0px;
+                            overflow: hidden;
+                            p {
+                                width: 200px;
+                                font-size: 14px;
+                                padding: 10px 0px;
+                                color: #fff;
+                                opacity: 0.7;
+                                transition: all 0.5s ease;
+                            }
+                            p:hover {
+                                cursor: pointer;
+                                opacity: 1;
+                            }
+                        }
 
-                        // a:hover::after {
-                        //     transform: scaleX(1);  
-                        // }
+                        .nav-models {
+                            p {
+                                margin-left: 100px;
+                            }
+                        }
+
+                        .nav-custom_solutions {
+                            p {
+                                margin-left: 200px;
+                            }
+                        }
+
+                        .nav-ownership {
+                            p {
+                                margin-left: 394px;
+                            }
+                        }
+                        .nav-motorsport {
+                            p{
+                                margin-left: 523px;
+                            }
+                        }
+                        
                     }
-                    li:hover a{
-                        border-bottom: 1px solid #ffffff ;
+                    .li-models:hover .nav-models {
+                        height: 230px;
                     }
-
+                    .li-custom_solutions:hover .nav-custom_solutions {
+                        height: 160px;
+                    }
+                    .li-ownership:hover .nav-ownership {
+                        height: 240px;
+                    }
+                    .li-motorsport:hover .nav-motorsport {
+                        height: 300px;
+                    }
                 }
             }
     
             .nav-bar-2 {
+                display: flex;
                 ul {
                     list-style: none;
                     li {
                         display: inline-block;
                         padding: 0px 15px;
                         a {
+                            position: relative;
                             padding: 10px 0px;
                             line-height: 94px;
                             text-decoration: none;
                             font-size: 16px;
                             color: #ffffff;
-                            i {
-                                color: #ffffff;
-                                font-size: 25px;
+                        }
+
+                        i {
+                            color: #ffffff;
+                            font-size: 25px;
+                            line-height: 94px;
+                        }
+
+                        i:hover {
+                            cursor: pointer;
+                        }
+
+                        a::before {
+                            position: absolute;
+                            content: '';
+                            width: 0;
+                            height: 0.5px;
+                            background-color: #fff;
+                            bottom: 0;
+                            transition: all 0.5s ease;
+                        }
+
+                        a:hover::before {
+                            width: 100%;
+                        }
+
+                        .taskbar-menu {
+                            position: absolute;
+                            z-index: 9;
+                            width: 100%;
+                            left: 0;
+                            top: 94px;
+                            background-color: #202020;
+                            transition: all 0.5s ease;
+                            overflow: hidden;
+                            .taskbar-menu-container {
+                                margin-top: 30px;
+                                max-width: 1200px;
+                                margin: 0 auto;
+                                display: flex;
+                                justify-content: space-between;
+                                .taskbar-menu-item {
+                                    ul {
+                                        li {
+                                            position: relative;
+                                            font-size: 20px;
+                                            padding: 10px 0px;
+                                            color: #ffffff;
+                                            transition: all 0.5s ease;
+                                            
+                                        }
+                                        li::before {
+                                            position: absolute;
+                                            content: '';
+                                            width: 0;
+                                            height: 0.5px;
+                                            background-color: #fff;
+                                            bottom: 0;
+                                            transition: all 0.5s ease;
+                                        }
+                
+                                        li:hover::before {
+                                            width: 100%;
+                                        }
+                                    }
+                                }
+                            }
+                            .separation {
+                                max-width: 1200px;
+                                height: 1px;
+                                background-color: #ffffff;
+                                opacity: 0.3;
+                                margin: 0 auto;
                             }
                         }
                     }
-
-                    li:hover a{
-                        border-bottom: 1px solid #ffffff ;
-                    }
                 }
             }
+        }
+        .overlay-header {
+            position: absolute;
+            top: 0;
+            width: 95%;
+            height: 100%;
+            background-color: #202020;
+            opacity: 0.4;
         }
     }
 }
@@ -86,5 +221,47 @@
     text-align: center;
     span {
         color: #ffffff;
+    }
+}
+
+@media (max-width:740px) {
+    .header {
+        overflow: hidden;
+        .header-container {
+            img {
+                width: 45px;
+                height: 45px;
+                margin-top: 10px;
+                margin-left: 20px;
+                margin-bottom: 10px;
+            }
+
+            .nav {
+                width: calc(100% - 90px);
+                justify-content: end;
+                .nav-bar-1 {
+                    display: none;
+                }
+
+                .nav-bar-2 {
+                    .nav-bar-item1 {
+                        display: none;
+                    }
+                    ul {
+                        li {
+                            padding: 0px 10px;
+                            i {
+                                line-height: 65px;
+                                font-size: 20px;
+                            }
+                        }
+
+                    }
+                }
+            }
+        }
+    }
+    .header-bottom {
+        display: none;
     }
 }

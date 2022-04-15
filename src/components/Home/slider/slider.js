@@ -5,33 +5,42 @@ import '../../../img/themify-icons-font/themify-icons/themify-icons.css'
 const Slider = () => {
     const [state, setState] = useState(false)
     window.addEventListener('load', function () {
-        const ArrSave = document.querySelectorAll('.save div')
-        const ArrThe = document.querySelectorAll('.the div')
-        const ArrDate = document.querySelectorAll('.date div')
+        const ArrHuracán = document.querySelectorAll('.huracán div')
+        const ArrTecnica = document.querySelectorAll('.tecnica div')
         let i = 0
         let j = 0
-        let k = 0
         const interval = setInterval(function () {
-            if (k >= ArrDate.length) clearInterval(interval)
+            if (j >= ArrTecnica.length) clearInterval(interval)
             else {
-                if (i < ArrSave.length) {
-                    ArrSave[i].style = 'opacity: 1'
+                if (i < ArrHuracán.length) {
+                    ArrHuracán[i].style = 'opacity: 1'
                     i++
                 }
                 else {
-                    if (j < ArrThe.length) {
-                        ArrThe[j].style = 'opacity: 1'
+                    if (j < ArrTecnica.length) {
+                        ArrTecnica[j].style = 'opacity: 1'
                         j++
-                    }
-                    else {
-                        ArrDate[k].style = 'opacity: 1'
-                        k++
                     }
                 }
             }
         }, 150)
         const contentdate = document.querySelector('.content-date')
-        contentdate.style = 'left: 160px'
+        const width = window.innerWidth
+        if (width > 740) {
+            contentdate.style = 'left: 160px'
+        }
+        else {
+            contentdate.style = 'left: 13px'
+        }
+        window.addEventListener('resize', () => {
+            const width = window.innerWidth
+            if (width > 740) {
+                contentdate.style = 'left: 160px'
+            }
+            else {
+                contentdate.style = 'left: 13px'
+            }
+        })
     })
 
     const handleOnclick = () => {
@@ -50,26 +59,27 @@ const Slider = () => {
     return (
         <div className='slider'>
             <h1 className='page-title'>
-                <div className='save'>
-                    <div>S</div>
-                    <div>A</div>
-                    <div>V</div>
-                    <div>E</div>
-                </div>
-                <div className='the'>
-                    <div>T</div>
+                <div className='huracán'>
                     <div>H</div>
-                    <div>E</div>
-                </div>
-                <div className='date'>
-                    <div>D</div>
+                    <div>U</div>
+                    <div>R</div>
                     <div>A</div>
+                    <div>C</div>
+                    <div>Á</div>
+                    <div>N</div>
+                </div>
+                <div className='tecnica'>
                     <div>T</div>
                     <div>E</div>
+                    <div>C</div>
+                    <div>N</div>
+                    <div>I</div>
+                    <div>C</div>
+                    <div>A</div>
                 </div>
             </h1>
-            <h2 className='content-date'>12 APRIL 2022<br />
-                12 PM CEST</h2>
+            <h2 className='content-date'>TAKE ALL YOUR<br />
+                SOULS TO DRIVE</h2>
             <span onClick={handleOnclick}>SAVE THE DATE <i className='ti-angle-down'></i></span>
             <div className='menu_span' style={{ display: state ? 'inherit' : 'none' }}>
                 <ul>
