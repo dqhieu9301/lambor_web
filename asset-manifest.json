@@ -1,0 +1,38 @@
+{
+  "files": {
+    "main.css": "/lambor_web/static/css/main.ea41ba53.css",
+    "main.js": "/lambor_web/static/js/main.d65fafe5.js",
+    "static/js/787.29b655c5.chunk.js": "/lambor_web/static/js/787.29b655c5.chunk.js",
+    "static/media/275257164_665154341214568__n.png": "/lambor_web/static/media/275257164_665154341214568_4886975037630627981_n.d4e5755529a0c1f7f128.png",
+    "static/media/277332242___n.png": "/lambor_web/static/media/277332242_3092987490959627_1605369733827404094_n.e7b1bbe9ac64a489394c.png",
+    "static/media/277927110___n.png": "/lambor_web/static/media/277927110_2569506373182539_4518683498330456087_n.62fffaeee5d9eb33ca1d.png",
+    "static/media/fa-solid-900.ttf": "/lambor_web/static/media/fa-solid-900.6aef0a3f12850e081374.ttf",
+    "static/media/hura_slide_01.jpg": "/lambor_web/static/media/hura_slide_01.2ed91b33b31d47623626.jpg",
+    "static/media/533702.jpg": "/lambor_web/static/media/533702.7aa766ffb714cc8606c0.jpg",
+    "static/media/themify.svg?-fvbane": "/lambor_web/static/media/themify.f0fc8c798eac5636249c.svg",
+    "static/media/tecnica_cover.webp": "/lambor_web/static/media/tecnica_cover.24d6d92a433dcc104089.webp",
+    "static/media/fa-brands-400.ttf": "/lambor_web/static/media/fa-brands-400.8dddb1b4cd1f65b03167.ttf",
+    "static/media/fa-solid-900.woff2": "/lambor_web/static/media/fa-solid-900.1089d04e572b44b3d54a.woff2",
+    "static/media/fa-brands-400.woff2": "/lambor_web/static/media/fa-brands-400.a4ac62083ead21bd1ea2.woff2",
+    "static/media/COVER_BUONA.webp": "/lambor_web/static/media/COVER_BUONA.a28a631425290b1b0cca.webp",
+    "static/media/themify.eot": "/lambor_web/static/media/themify.9bad94440d49256265a5.eot",
+    "static/media/themify.ttf?-fvbane": "/lambor_web/static/media/themify.eda8b94308c6f538f04a.ttf",
+    "static/media/Homepage CC URUS_1920_706.png": "/lambor_web/static/media/Homepage CC URUS_1920_706.0e7fc59c81cc93bdb65e.png",
+    "static/media/COVER_D.webp": "/lambor_web/static/media/COVER_D.ccc79f75bbd5872ff17d.webp",
+    "static/media/Homepage CC HURACAN_EVO_1920_706.png": "/lambor_web/static/media/Homepage CC HURACAN_EVO_1920_706.624c8a826481df8bd471.png",
+    "static/media/fa-regular-400.ttf": "/lambor_web/static/media/fa-regular-400.e2e080ba746195932d7f.ttf",
+    "static/media/themify.woff?-fvbane": "/lambor_web/static/media/themify.29b39089170885ae2967.woff",
+    "static/media/Homepage CC AVANZAMENTO_ultimae_1920_706.jpg": "/lambor_web/static/media/Homepage CC AVANZAMENTO_ultimae_1920_706.94a4a0eba9012864b0f3.jpg",
+    "static/media/fa-regular-400.woff2": "/lambor_web/static/media/fa-regular-400.d9ed9b6f8138a03cd29d.woff2",
+    "static/media/fa-v4compatibility.ttf": "/lambor_web/static/media/fa-v4compatibility.83a9e0357eddeb41b08b.ttf",
+    "static/media/fa-v4compatibility.woff2": "/lambor_web/static/media/fa-v4compatibility.2e77423e3ed431908eda.woff2",
+    "index.html": "/lambor_web/index.html",
+    "main.ea41ba53.css.map": "/lambor_web/static/css/main.ea41ba53.css.map",
+    "main.d65fafe5.js.map": "/lambor_web/static/js/main.d65fafe5.js.map",
+    "787.29b655c5.chunk.js.map": "/lambor_web/static/js/787.29b655c5.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ea41ba53.css",
+    "static/js/main.d65fafe5.js"
+  ]
+}
