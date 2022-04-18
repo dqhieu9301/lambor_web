@@ -2,6 +2,7 @@ import React from "react";
 import './login.scss';
 import '../../img/themify-icons-font/themify-icons/themify-icons.css';
 import '../../img/fontawesome-free-6.1.0-web/css/all.min.css';
+import { Link } from "react-router-dom";
 const Login = () => {
     return (
         <div className="login">
@@ -16,7 +17,7 @@ const Login = () => {
                         <input type='password' placeholder="Password"></input>
                     </div>
                     <div className="summit">
-                        <button><a href="/home">SIGN IN</a></button>
+                        <Link to="/home"><button>SIGN IN</button></Link>
                     </div>
                     <span>Not a member?<a href="">Sign up now <i class="fa-solid fa-arrow-right"></i></a></span>
                 </form>

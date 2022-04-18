@@ -59,16 +59,17 @@
 
         .summit {
             margin-top: 10px;
-            button {
-                width: 373px;
-                height: 53px;
-                background-color: #ea4c88;
-                font-weight: 900;
-                border-radius: 5px;
-                a {
+            a {
+                button {
+                    width: 373px;
+                    height: 53px;
+                    background-color: #ea4c88;
+                    font-weight: 900;
+                    border-radius: 5px;
                     color: #fff;
                 }
             }
+
         }
 
         .summit:hover button{

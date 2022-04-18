@@ -3,6 +3,7 @@ import './header.scss';
 import logo from '../../img/logo.png';
 import '../../img/themify-icons-font/themify-icons/themify-icons.css';
 import '../../img/fontawesome-free-6.1.0-web/css/all.min.css';
+import { Link } from 'react-router-dom';
 const Header = () => {
     const [stateMenu, setstateMenu] = useState(false)
     const [stateSearch, setstateSearch] = useState(false)
@@ -10,7 +11,7 @@ const Header = () => {
         <>
             <div className='header'>
                 <div className='header-container'>
-                    <a href='/'><img src={logo}></img></a>
+                    <Link to="/"><img src={logo}></img></Link>
                     <div className='nav'>
                         <div className='nav-bar-1'>
                             <ul>
@@ -61,7 +62,7 @@ const Header = () => {
                             </div>
                             <div className='nav-bar-item2'>
                                 <ul>
-                                    <li><a href='/login'><i class="fa-solid fa-user"></i></a></li>
+                                    <li><Link to="/login"><i class="fa-solid fa-user"></i></Link></li>
                                     <li onClick={() => setstateSearch(true)}><i className='ti-search'></i>
                                         <div className='search' style={{ height: stateSearch ? '100vh' : '0px' }}>
                                             <div className='search-container'>
