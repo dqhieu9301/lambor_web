@@ -5,12 +5,12 @@ import '../../img/themify-icons-font/themify-icons/themify-icons.css';
 import '../../img/fontawesome-free-6.1.0-web/css/all.min.css';
 const Header = () => {
     const [stateMenu, setstateMenu] = useState(false)
-
+    const [stateSearch, setstateSearch] = useState(false)
     return (
         <>
             <div className='header'>
                 <div className='header-container'>
-                    <img src={logo}></img>
+                    <a href='/'><img src={logo}></img></a>
                     <div className='nav'>
                         <div className='nav-bar-1'>
                             <ul>
@@ -61,8 +61,20 @@ const Header = () => {
                             </div>
                             <div className='nav-bar-item2'>
                                 <ul>
-                                    <li><i class="fa-solid fa-message"></i></li>
-                                    <li><i className='ti-search'></i></li>
+                                    <li><a href='/login'><i class="fa-solid fa-user"></i></a></li>
+                                    <li onClick={() => setstateSearch(true)}><i className='ti-search'></i>
+                                        <div className='search' style={{ height: stateSearch ? '100vh' : '0px' }}>
+                                            <div className='search-container'>
+                                                <span onClick={() => {
+                                                    setstateSearch(false)
+                                                    console.log(stateSearch)
+                                                }}>CLOSE SEARCH <i className='ti-close'></i></span>
+                                                <h3>LAMBORGHINI</h3>
+                                                <h1>SEARCH IN THE<br />
+                                                    WEBSITE</h1>
+                                                <input type='text' placeholder='Search on Lamborghini.com'></input><button>Search</button>
+                                            </div>
+                                        </div></li>
                                     <li onClick={() => {
                                         setstateMenu(!stateMenu)
                                     }}>
@@ -98,6 +110,7 @@ const Header = () => {
                         </div>
                     </div>
                     <div className='overlay-header' style={{ display: stateMenu ? 'inherit' : 'none' }}></div>
+                    <div className='overlay-header-search' style={{ display: stateSearch ? 'inherit' : 'none' }}></div>
                 </div>
             </div>
             <div className='header-bottom'>
